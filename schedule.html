@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
+  <meta charset="UTF-8">
+  <title>Racing A</title>
+</head>
+<body>
+  <nav class="nav-bar">
+      <ul class ="nav-bar-ul">
+          <li><a href="index.html" class ="nav-bar-item nav-bar-li"> Home</a></li>
+        <li><a href="howWeStructure.html" class ="nav-bar-item nav-bar-li"> Day Structure</a></li>
+        <li><a href="team.html" class ="nav-bar-item nav-bar-li"> Team</a></li>
+
+      </ul>
+  </nav>
+<section id = "schedule">
+    <div class="container">
+      <h3>Schedule</h3>
+      <table class="schedule-table"  cellpadding="0" cellspacing="0">
+          <tbody>
+            <tr>
+                <th>Time</th>
+                <th>Monday</th>
+                <th>Tuesday</th>
+                <th>Wednesday</th>
+                <th>Thursday</th>
+                <th>Friday</th>
+                <th>Saturday</th>
+            </tr>
+            <tr>
+              <td>9:00 - 11:00</td>
+              <td></td>
+              <td></td>
+              <td>X</td>
+              <td></td>
+              <td>X</td>
+              <td>X</td>
+            </tr>
+          
+            <tr>
+              <td>12:00 - 14:00</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>X</td>
+              <td>X</td>
+            </tr>
+            
+            <tr>
+              <td>15:00 - 17:00</td>
+              <td></td>
+              <td></td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+            </tr>
+          </tbody>
+          </table>
+      <h3>Schedule a Time Slot</h3>
+      <form action="/register" class="slot-form">
+        <div class = "slot-form-container">
+          <label for ="email">Email:</label>
+          <input type="email" placeholder ="enter your email">
+        </div>
+        <div class = "slot-form-container">
+          <label for="participants"> Participants:</label>
+          <input type ="number" placeholder="Number of participants">
+        </div>
+        <div class = "slot-form-container">
+            <label for="date">Date:</label>
+            <input type ="date">
+          </div>
+          <div class = "slot-form-container">
+          <label for ="time">Time: </label>
+          <select name="Time">
+              <option value="early">9:00 - 11:00</option>
+              <option value="mid">12:00 - 14:00</option>
+              <option value="late">15:00 - 17:00</option>
+          </select>
+          </div>
+          <div class ="slot-form-container">
+              <button>Reserve Your Slot</button>
+          </div>
+      </form>
+    </div>
+  </section> 
+
+  </body>
+  </html>
